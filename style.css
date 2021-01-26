@@ -148,91 +148,47 @@ html, body {
 
 /* HERO END */
 
-/* PROJECTS START */ 
+/* style START */ 
 
-.project {
+.style-photo {
     height: 200px;
 }
 
-.project1 {
+.style-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.style-text hr{
+    width: 40px;
+    position: relative;
+    left: 43%;
+}
+
+.photo1 {
     background: url(https://images.unsplash.com/photo-1604935067269-27c7e8b36618?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
     background-size: cover;
-    margin-left: 850px;
 }
 
-.project1::after {
-    content: "minimal style";
-    font-size: 25px;
-    display: block;
-    position: relative;
-    top: 8%;
-    right: 0;
-    bottom: 0;
-    left: -60%;
-}
 
-.project2 {
+.photo2 {
     background: url(https://images.unsplash.com/photo-1604935067269-27c7e8b36618?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
     background-size: cover;
-    margin-left: 100px;
 }
 
-.project2::after {
-    content: "purposeful arrangement";
-    font-size: 25px;
-    display: block;
-    position: relative;
-    top: 80%;
-    right: 0;
-    bottom: 0;
-    left: 90%;
-}
-
-.project3 {
+.photo3 {
     background: url(https://images.unsplash.com/photo-1604782666037-3c63d50052db?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
     background-size: cover;
-    margin-left: 850px;
-}
-
-.project3::after {
-    content: "artistic compostition";
-    font-size: 25px;
-    display: block;
-    position: relative;
-    top: 80%;
-    right: 0;
-    bottom: 0;
-    left: -50%;
-}
-
-.project4 {
-    background: url(https://images.unsplash.com/photo-1604782206219-3b9576575203?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2143&q=80) no-repeat 50% 50%;
-    background-size: cover;
-    margin-left: 100px;
-}
-
-.project4::after {
-    content: "pragmatic design";
-    font-size: 25px;
-    display: block;
-    position: relative;
-    top: 10%;
-    right: 0;
-    bottom: 0;
-    left: 90%;
 }
 
 @media(max-width: 768px) {
-    .project {
+    .style-photo {
         width: 90% !important;
         margin: 14px auto;
     }
-    .project1::after, .project2::after, .project3::after, .project4::after {
-        display: none;
-    }
 }
 
-/* PROJECTS END */
+/* style END */
 
 /* ABOUT START */
 .intro {
