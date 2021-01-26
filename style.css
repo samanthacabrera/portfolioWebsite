@@ -151,7 +151,7 @@ html, body {
 /* style START */ 
 
 .style-photo {
-    height: 200px;
+    height: 150px;
 }
 
 .style-text {
@@ -206,6 +206,58 @@ html, body {
     height: auto;
 }*/
 /* ABOUT END */
+
+/* BRAND START */
+#grid {
+    padding:none;
+    margin:none;
+    border: none;
+    column-gap:0px;
+}
+.bigPhoto {
+    height: 200px;
+    width: 150px;
+    padding: 0px;
+}
+
+.smallPhoto1 {
+    height: 100px;
+    width: 150px;
+}
+
+.smallPhoto2 {
+    height: 100px;
+    width: 200px;
+}
+.smallPhoto3 {
+    height:100px;
+    width: 175px;
+}
+.smallPhoto4 {
+    height: 100px;
+    width: 175px;
+}
+.bigPhoto2 {
+    height: 200px;
+    width: 150px;
+}
+
+.color1 {
+    background-color:linen;
+}
+
+.color2 {
+    background-color:blanchedalmond;
+}
+
+.color3 {
+    background-color: burlywood;
+}
+
+.color4 {
+    background-color: beige
+}
+/* BRAND END */
 
 /* CONTACT START */
 #contact-form {
