@@ -207,6 +207,31 @@ html, body {
 }*/
 /* ABOUT END */
 
+/* LANG START */
+
+/* PROCESS START */
+.process {
+    background-color:rgba(13, 13, 13, 0.75);
+}
+#process-heading {
+    color: linen;
+    font-size: 45px;
+    letter-spacing: 30px;
+    text-align: left;
+    padding: 5rem 0;
+}
+#process-img {
+    height: 50vh;
+    width: 30vw;
+}
+.stepNumber {
+    font-size: 100px;
+    text-align: center;
+    color: linen;
+    position: relative;
+    bottom: 150px;
+}
+
 /* BRAND START */
 #grid {
     padding:none;
@@ -244,24 +269,25 @@ html, body {
 
 .color1 {
     background-color:linen;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .color2 {
     background-color:blanchedalmond;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .color3 {
     background-color: burlywood;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .color4 {
-    background-color: beige
-}
-
-/* STATS START */
-img {
-    width: 90%;
-    height: auto;
+    background-color: beige;
+    height: 40px;
 }
 
 /* FEATURED START */
@@ -274,6 +300,9 @@ img {
     
 }
 
+.vid-border {
+    border: 1px solid linen;
+}
 
 /* QUOTE START */
 .quote {
@@ -369,7 +398,7 @@ input:focus , textarea:focus {
         width: 98%;
     }
 }
-/* CONTACT END */
+
 
 /* PROJECT PAGE START */
 .project-vid video{
@@ -410,3 +439,9 @@ input:focus , textarea:focus {
     margin-bottom: 20px;
 }
 /* FOOTER END */
+
+.divider-img {
+    background-image: url(https://images.unsplash.com/photo-1526235591527-15084c256bad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80);
+    height: 35vh;
+    opacity: 0.1;
+}
