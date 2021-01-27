@@ -221,7 +221,7 @@ html, body {
     padding: 5rem 0;
 }
 #process-img {
-    height: 50vh;
+    height: auto;
     width: 30vw;
 }
 .stepNumber {
