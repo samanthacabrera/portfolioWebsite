@@ -46,10 +46,11 @@ html, body {
 #navbar li a:hover {
     color: white;
 }
-/* NAVBAR END */
 
-/* MAIN HERO START */
+/* HOME START */
+
 .line {
+    color:rgba(13, 13, 13, 0.75);
     width: 24em;
     top: 50%;
     margin: auto;
@@ -93,18 +94,12 @@ html, body {
         border-right-color: transparent;
     }
 }
-/* MAIN HERO END */ 
 
-/* HERO START */ 
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.hero-content {
-
 }
 
 .hero h1 {
@@ -124,6 +119,7 @@ html, body {
 }
 
 .scroll-down {
+    color:rgba(13, 13, 13, 0.75);
     height: 20px;
     width: 20px;
     position: absolute;
@@ -146,47 +142,26 @@ html, body {
     }
 }
 
-/* HERO END */
-
-/* style START */ 
+/* STYLE START */ 
 .style-text {
     font-size: 12px;
     text-align: center;
+    padding: 0% 10%;
 }
 
 .style-text hr{
-    width: 40px;
+    width: 180px;
     position: relative;
-    left: 43%;
+    left: 5%;
 }
-
-
-
-/* ABOUT START */
-.intro {
-    text-align: center;
-    font-size: 12px;
-    font-weight: lighter;
-    margin: 10px 50px;
-    position: relative;
-    left: 30%;
-}
-
-/*.about-pic {
-    border-radius: 100% 100% 0% 0%;
-    width: 250px;
-    height: auto;
-}*/
-/* ABOUT END */
-
 /* LANG START */
 
 /* PROCESS START */
-.process {
-    background-color:rgba(13, 13, 13, 0.75);
+#process {
+    background-color: linen;
 }
 #process-heading {
-    color: linen;
+    color: rgba(13, 13, 13, 0.75);
     font-size: 45px;
     letter-spacing: 30px;
     text-align: left;
@@ -197,9 +172,9 @@ html, body {
     width: 30vw;
 }
 .stepNumber {
+    color: white;
     font-size: 100px;
     text-align: center;
-    color: linen;
     position: relative;
     bottom: 150px;
 }
@@ -291,13 +266,14 @@ html, body {
 }
 
 /* QUOTE START */
-.quote {
+#quote {
+    color:rgba(13, 13, 13, 0.75);
     background-color: rgba(255, 235, 205, 0.521);
     height: 150px;
     text-align: center;
     padding-top: 50px;
 }
-.quote h4 {
+#quote h4 {
     font-size: 2rem;
     border: 1px solid linen;
     height: 230px;
@@ -308,12 +284,13 @@ html, body {
     padding-top: 35px;
     
 }
-.quote h6 {
+#quote h6 {
     font-size: 1rem;
     font-weight:500;
     position: relative;
     bottom: 120%;
-    
+    text-transform: lowercase;
+    letter-spacing: 10px;
 }
 /* QUOTE END */
 
