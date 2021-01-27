@@ -149,11 +149,6 @@ html, body {
 /* HERO END */
 
 /* style START */ 
-
-.style-photo {
-    height: 150px;
-}
-
 .style-text {
     font-size: 12px;
     text-align: center;
@@ -165,30 +160,7 @@ html, body {
     left: 43%;
 }
 
-.photo1 {
-    background: url(https://images.unsplash.com/photo-1604935067269-27c7e8b36618?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
-    background-size: cover;
-}
 
-
-.photo2 {
-    background: url(https://images.unsplash.com/photo-1604935067269-27c7e8b36618?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.photo3 {
-    background: url(https://images.unsplash.com/photo-1604782666037-3c63d50052db?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=582&q=80) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-@media(max-width: 768px) {
-    .style-photo {
-        width: 90% !important;
-        margin: 14px auto;
-    }
-}
-
-/* style END */
 
 /* ABOUT START */
 .intro {
@@ -291,17 +263,31 @@ html, body {
 }
 
 /* FEATURED START */
+#featured-heading{
+    font-size: 60px;
+    color:rgba(13, 13, 13, 0.75);
+    letter-spacing: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 60px;
+}
+.featured-name {
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    text-decoration: ;
+}
+.vid-border {
+    border: 1px solid linen;
+}
+
 .arrow {
     height: 50px;
     width: 50px;
     position: relative;
-    left: 10%;
-    top: 140px;
-    
-}
-
-.vid-border {
-    border: 1px solid linen;
+    left: 15%;
+    top: 140px;  
 }
 
 /* QUOTE START */
