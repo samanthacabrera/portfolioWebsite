@@ -176,6 +176,7 @@ html, body {
     left: 75%;
     
 }
+
 /* LANG START */
 
 /* PROCESS START */
@@ -317,6 +318,15 @@ html, body {
 /* QUOTE END */
 
 /* CONTACT START */
+.collab {
+    text-align: right;
+}
+
+.collab p {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
 #contact-form {
     position: relative;
     left: 25%;
@@ -415,14 +425,7 @@ input:focus , textarea:focus {
 /* PROJECT PAGE END */
 
 /* FOOTER START */
-.collab {
-    text-align: right;
-}
 
-.collab p {
-    font-weight: lighter;
-    margin-bottom: 20px;
-}
 /* FOOTER END */
 
 .divider-img {
