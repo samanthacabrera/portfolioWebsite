@@ -146,19 +146,41 @@ html, body {
 .style-text {
     font-size: 12px;
     text-align: center;
-    padding: 0% 10%;
+    padding: 0% 15%;
 }
 
 .style-text hr{
     width: 180px;
     position: relative;
-    left: 5%;
+    left: 20%;
+}
+
+.line-left {
+    border-left: 1px solid rgba(13, 13, 13, 0.25);
+}
+
+.line-right {
+    border-right: 1px solid rgba(13, 13, 13, 0.25);
+}
+
+#style img {
+    height: 400px;
+    width: auto;
+    transform: rotate(90deg);
+    position: relative;
+    top: -100px;
+}
+
+#move-right {
+    position: relative;
+    left: 75%;
+    
 }
 /* LANG START */
 
 /* PROCESS START */
 #process {
-    background-color: linen;
+    background: linear-gradient(45deg, linen, blanchedalmond);
 }
 #process-heading {
     color: rgba(13, 13, 13, 0.75);
