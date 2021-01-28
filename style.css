@@ -173,11 +173,44 @@ html, body {
 
 #move-right {
     position: relative;
-    left: 75%;
+    left: 65%;
     
 }
 
-/* LANG START */
+/* ABOUT START */
+#about {
+    background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
+    height: 100vh;
+    width: auto;
+}
+
+#about-heading {
+    color:rgba(13, 13, 13, 0.75);
+    font-size: 5rem;
+    padding-top: 5%;
+    position: relative;
+    left: 60%;
+}
+
+#about-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 1px solid whitesmoke;
+    position: relative;
+    left: 77%;
+    bottom: 130px;
+}
+
+.about-section {
+    color: linen;
+    font-size: 14px;
+    padding: 5px;
+    position: relative;
+    top: 8em;
+}
+
+/* SKILLS START */
 
 /* PROCESS START */
 #process {
@@ -270,11 +303,14 @@ html, body {
     margin-left: 60px;
 }
 .featured-name {
+    height: 100px;
+    width: 100px;
     font-size: 15px;
     text-align: center;
-    position: relative;
-    top: 130px;
-    text-decoration: ;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .vid-border {
     border: 1px solid linen;
@@ -291,7 +327,7 @@ html, body {
 /* QUOTE START */
 #quote {
     color:rgba(13, 13, 13, 0.75);
-    background-color: rgba(255, 235, 205, 0.521);
+    background-color: lightsteelblue;
     height: 150px;
     text-align: center;
     padding-top: 50px;
@@ -315,7 +351,6 @@ html, body {
     text-transform: lowercase;
     letter-spacing: 10px;
 }
-/* QUOTE END */
 
 /* CONTACT START */
 .collab {
@@ -422,7 +457,7 @@ input:focus , textarea:focus {
     height: 15px;
     float: right;
 }
-/* PROJECT PAGE END */
+
 
 /* FOOTER START */
 
