@@ -176,7 +176,6 @@ html, body {
     left: 65%;
     
 }
-
 /* ABOUT START */
 #about {
     background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
@@ -207,10 +206,26 @@ html, body {
     font-size: 14px;
     padding: 5px;
     position: relative;
-    top: 8em;
+    top: 5em;
 }
 
 /* SKILLS START */
+#skills h1 {
+    text-align: left;
+    color:rgba(13, 13, 13, 0.75);
+    letter-spacing: 8px;
+    font-size: 25px;
+    padding: 50px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#skills img {
+    width: 350px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
 
 /* PROCESS START */
 #process {
@@ -219,7 +234,7 @@ html, body {
 #process-heading {
     color: rgba(13, 13, 13, 0.75);
     font-size: 45px;
-    letter-spacing: 30px;
+    letter-spacing: 15px;
     text-align: left;
     padding: 5rem 0;
 }
@@ -236,6 +251,11 @@ html, body {
 }
 
 /* BRAND START */
+#grid {
+    display: grid;
+}
+
+
 #grid {
     padding:none;
     margin:none;
@@ -303,14 +323,10 @@ html, body {
     margin-left: 60px;
 }
 .featured-name {
-    height: 100px;
-    width: 100px;
     font-size: 15px;
     text-align: center;
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 100px;
+    letter-spacing: 2px;
 }
 .vid-border {
     border: 1px solid linen;
@@ -327,14 +343,14 @@ html, body {
 /* QUOTE START */
 #quote {
     color:rgba(13, 13, 13, 0.75);
-    background-color: lightsteelblue;
+    background-color: linen;
     height: 150px;
     text-align: center;
     padding-top: 50px;
 }
 #quote h4 {
     font-size: 2rem;
-    border: 1px solid linen;
+    border: 1px solid rgba(13, 13, 13, 0.25);
     height: 230px;
     width: 700px;
     position: relative;
@@ -375,6 +391,7 @@ html, body {
 
 #contact-form li {
     padding: 10px;
+    letter-spacing: 2px;
 }
 
 #contact-form li:last-of-type {
@@ -460,7 +477,29 @@ input:focus , textarea:focus {
 
 
 /* FOOTER START */
+footer {
+    color:rgba(13, 13, 13, 0.75);
+    background-color: linen;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+}
 
+.footer-heading {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+footer a {
+    color:rgba(13, 13, 13, 0.75);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}
 /* FOOTER END */
 
 .divider-img {
