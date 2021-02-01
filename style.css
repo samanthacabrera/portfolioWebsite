@@ -166,17 +166,13 @@ html, body {
 
 #style img {
     height: 400px;
-    width: auto;
-    transform: rotate(90deg);
+    width: 300px;
     position: relative;
     top: -100px;
+    margin: 0px 175px;
+    border-radius: 45% 45% 0% 0%;
 }
 
-#move-right {
-    position: relative;
-    left: 65%;
-    
-}
 /* ABOUT START */
 #about {
     background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
