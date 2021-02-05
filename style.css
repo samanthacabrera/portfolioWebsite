@@ -145,34 +145,29 @@ html, body {
     }
 }
 
-/* STYLE START */ 
+/* STYLE START */
+#style {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+} 
 .style-text {
     font-size: 12px;
     text-align: center;
-    padding: 0% 15%;
-}
-
-.style-text hr{
-    width: 180px;
-    position: relative;
-    left: 20%;
+    padding: 150px 200px 0px 200px;
+    line-height: 20px;
 }
 
 .line-left {
     border-left: 1px solid rgba(13, 13, 13, 0.25);
 }
 
-.line-right {
-    border-right: 1px solid rgba(13, 13, 13, 0.25);
-}
-
 #style img {
     height: 400px;
     width: 300px;
-    position: relative;
-    top: -100px;
-    margin: 0px 175px;
     border-radius: 45% 45% 0% 0%;
+    position: relative;
+    left: 30%;
 }
 
 /* ABOUT START */
@@ -211,7 +206,7 @@ html, body {
 .about-section1 , .about-section2 {
     color: whitesmoke;
     font-size: 14px;
-    padding: 0px 100px;
+    padding: 0px 100px 0px 150px;
 }
 
 .about-section1 {
@@ -250,6 +245,7 @@ html, body {
 .skills-photo { 
     grid-column: 1/2;
     grid-row: 1;
+    padding-left: 50px;
 }
 
 .skills-photo img{
