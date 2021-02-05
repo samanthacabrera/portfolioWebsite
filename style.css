@@ -278,35 +278,54 @@ html, body {
 #process {
     background-image: url(https://images.unsplash.com/photo-1536009190979-329b94ad4d57?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
     height: 100vh;
+    padding-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "heading heading heading . "
+    "num1 num2 num3 ."
+    "step1 step2 step3 . ";
 }
 #process-heading {
+    grid-area: heading;
     color: white;
-    font-size: 45px;
+    font-size: 60px;
     letter-spacing: 30px;
     text-align: left;
-    padding-top: 5rem;
     text-transform: uppercase;
+    padding: 50px 0px 0px 50px;
 }
 
-.stepNumber {
+.number {
     color: white;
     font-size: 100px;
     text-align: left;
-    padding-bottom: 10px;
+    padding-left: 50px;
+}
+.number1 {
+    grid-area: num1;
+}
+.number2 {
+    grid-area: num2;
+}
+.number3 {
+    grid-area: num3;
 }
 
 .process-step {
     color: white;
     font-size: 12px;
-    padding: 30px;
+    padding: 0px 50px;
 }
-
-#process-img {
-    display: none;
-    height: 80vh;
-    width: auto;
-    position: relative;
-    bottom: 12rem;
+.step1 {
+    grid-area: step1;
+}
+.step2 {
+    grid-area: step2;
+}
+.step3 {
+    grid-area: step3;
 }
 
 /* FEATURED START */
