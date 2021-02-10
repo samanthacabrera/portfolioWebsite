@@ -5,13 +5,6 @@
   <meta charset="utf-8">
 
   <title>Samantha Cabrera Portfolio</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="animate.css">
 
@@ -28,7 +21,7 @@
 <!-- NAV START -->  
   <nav>
       <ul id="navbar">
-          <li> <a href="">Home</a></li>
+          <li> <a href="">Homme</a></li>
           <li> <a href="#about-me">About</a></li>
           <li> <a href="#contact-me">Contact</a></li>
       </ul>
@@ -55,7 +48,7 @@
 <section id="style">
 
   <div class="style-text">
-    <p>minimal style</p>
+    <p class = "wow animate__animated animate__bounce">minimal style</p>
     <p>I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
       sustainable
       unicorn. Fixie seitan VHS yr, lumbersexual palo santo kale chips occupy vice put a bird on it unicorn
@@ -72,7 +65,7 @@
 
   <div class="style-text line-left">
       <p>purposeful design</p>
-      <p>I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
+      <p class = "wow animate__animated animate__rubberBand">I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
       sustainable
       unicorn. Fixie seitan VHS yr, lumbersexual palo santo kale chips occupy vice put a bird on it unicorn
       kickstarter</p>
@@ -163,7 +156,7 @@
 
   <div class="skill">
     <hr>
-    <p>mongo</p> 
+    <p>javascript</p> 
     <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
       Venmo messenger bag mumblecore twee man bun crucifixamsburg edison bulb fingerstache raclet
     </p>
@@ -179,7 +172,7 @@
 
   <div class="skill">
     <hr>
-    <p>html</p>
+    <p>bootstrap</p>
     <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
       enmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclfjljfls el
     </p>
@@ -292,70 +285,56 @@
 
 <!-- CONTACT START -->
 <section id="contact">
-  <div class="container-fluid">
-
-        <div class="collab">
-          <div class="row">
-            <div class="col-lg-10 animate__animated animate__fadeIn">
-              <a id="contact-me">
-                <p>Got an interesting project? I can help.</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="whitespace"></div>
-    <div class="row">
-      <div class="col-lg-8">
-        <form name="contact-form" id="contact-form" method="POST" action="">
-  
-          <ul>
-            <li>
-              <label for="contact-name">Name: </label>
-              <div class="textarea">
-                <input type="text" name="contact-name" id="contact-name" value="" required>
-              </div>
-            </li>
-  
-            <li>
-              <label for="contact-email">Email: </label>
-              <div class="textarea">
-                <input type="email" name="contact-email" id="contact-email" value="" required>
-              </div>
-            </li>
-  
-            <li>
-              <label for="contact-message">Message: </label>
-              <div class="textarea">
-                <textarea type="text" name="contact-message" id="contact-message" value="" rows="6" required></textarea>
-              </div>
-            </li>
-          </ul>
-  
-          <button type="submit" name="contact-submit" id="contact-submit"
-            class="send animate__animated animate__fadeUp">Send Message</button>
-        </form>
-      </div>
-    </div>
+  <div class="collab">
+    <a id="contact-me">
+      <p>Got an interesting project? I can help.</p>
+    </a>
   </div>
+
+  <form name="contact-form" id="contact-form" method="POST" action="">
+    <ul>
+      <li>
+        <label for="contact-name">Name: </label>
+          <div class="textarea">
+            <input type="text" name="contact-name" id="contact-name" value="" required>
+          </div>
+      </li>
+  
+      <li>
+        <label for="contact-email">Email: </label>
+          <div class="textarea">
+            <input type="email" name="contact-email" id="contact-email" value="" required>
+          </div>
+      </li>
+  
+      <li>
+        <label for="contact-message">Message: </label>
+          <div class="textarea">
+            <textarea type="text" name="contact-message" id="contact-message" value="" rows="6" required></textarea>
+          </div>
+      </li>
+    </ul>
+  
+    <button type="submit" name="contact-submit" id="contact-submit" class="send">Send Message</button>
+  </form>
 </section>
 
-<div class="whitespace"></div>
 <!-- FOOTER START -->
 <footer>
-  <div class="logo">
-    <img class="logo" src="Samantha Cabrera Logo.png">
-  </div>
-
   <h6 class="footer-heading">Connect with me</h6>
+
+  <div class="logo">
+      <img class="logo" src="./Samantha Cabrera Logo.png">
+  </div>
 
   <h6 class="footer-heading">Follow me</h6>
 
+  <p>inquires@samanthacabrera.co</p>
+
+  <p><a href="https://github.com/samanthacabrera" target=__blank>www.github.com/samanthacabrera</a></div></p>
+
+  
   <p>Photos from<a href="www.Unsplash.com" target=__blank> www.Unsplash.com </a></div>
-
-  <p>samantha.n.cabrera@gmail.com</p>
-
-  <p><a href="https://github.com/samanthacabrera" target=__blank>www.github.com/samanthacabrera</a></div>
-  </p>
 
   <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> & <a
       href="https://www.freepik.com" title="Freepik">Freepik</a> <br> from <a href="https://www.flaticon.com/"
@@ -367,7 +346,9 @@
     integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>            
-    
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
