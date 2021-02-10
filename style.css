@@ -4,6 +4,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Playfair Display', serif;
+    font-weight: lighter;
     color:rgba(13, 13, 13, 0.75);
 
 }
@@ -13,38 +14,46 @@ html, body {
     height: 100px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .whitespace {
         display: none;
     }
 }
 
+.flex-direction {
+    display: flex;
+}
 
+@media (max-width: 1200px) {
+    .flex-direction {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 
 /* NAVBAR START */
 #navbar {
   width: 100px; 
   height: 300px;
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;  
   top: 175px; 
   left: 0;
-  background-color: bisque; 
-  overflow-x: hidden; 
-  padding-top: 20px;
-  opacity: 0.5;
+  z-index: 1;
+  background-color: transparent; 
 }
 
 #navbar li {
     list-style: none;
     transform: rotate(270deg);
     display: block;
-    height: 75px;
+    height: 90px;
+    padding: 10px;
 }
 
 #navbar li a{
   text-decoration: none;
-  color: black;
+  text-transform: uppercase;
+  color: rgba(13, 13, 13, 0.5);
 }
 
 #navbar li a:hover {
@@ -58,7 +67,7 @@ html, body {
     top: 50%;
     margin: auto;
     border-right: 2px solid rgba(13, 13, 13, 0.75);
-    text-align: end;
+
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
@@ -69,23 +78,45 @@ html, body {
     blinkTextCussor 1s steps(40) infinite normal;
 }
 
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 8vw;
+    color: #786454;
+}
+
+.hero h5 {
+    font-weight: lighter;
+    font-size: 3vw;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
     }
     to {
-        width: 100%;
+        width: 52%;
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:1000px) {
     @keyframes typewriter {
         from {
             width: 0;
         }
         to {
-            width: 100%;
+            width: 52%;
         }
+    }
+    .hero h1 {
+        color: red;
     }
 }
 
@@ -96,29 +127,6 @@ html, body {
     to {
         border-right-color: transparent;
     }
-}
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h1 {
-    text-align: end;
-    font-size: 3em;
-}
-
-.hero h3 {
-    font-size: 2em;
-    text-align: start;
-}
-
-.hero h5 {
-    font-weight: lighter;
-    text-align: end;
-    font-size: 2em;
 }
 
 .scroll-down {
@@ -171,6 +179,28 @@ html, body {
     left: 30%;
 }
 
+@media (max-width: 1200px) {
+    .line-left {
+        border-left: none;
+    }
+    .style-text {
+        font-size: 20px;
+        padding: 20px;
+        margin: 50px;
+        line-height: 30px;
+    }
+    .flex-direction {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+
+}
+
 /* ABOUT START */
 #about {
     background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
@@ -189,6 +219,7 @@ html, body {
 #about-heading h1 {
     color:rgba(13, 13, 13, 0.75);
     font-size: 5em;
+    font-weight: lighter;
     padding-top: 50px;
 }
 
@@ -207,7 +238,8 @@ html, body {
 .about-section1 , .about-section2 {
     color: whitesmoke;
     font-size: 14px;
-    padding: 0px 100px 0px 150px;
+    padding: 0px 50px 0px 50px;
+    margin-left: 150px;
 }
 
 .about-section1 {
@@ -218,6 +250,19 @@ html, body {
 .about-section2 {
     grid-column: 2/3;
     grid-row: 2;
+}
+
+@media (max-width: 1200px) {
+    #about-circle {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+
 }
 
 /* SKILLS START */
@@ -268,6 +313,17 @@ html, body {
 
 .skill p {
     font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+
 }
 
 
@@ -325,6 +381,19 @@ html, body {
     grid-area: step3;
 }
 
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    .number {
+        visibility: hidden;
+    }
+}
+@media (max-width: 600px) {
+
+}
+
 /* FEATURED START */
 #featured-grid {
     display: grid;
@@ -336,6 +405,7 @@ html, body {
 
 .featured-heading h2 {
     font-size: 40px;
+    font-weight: lighter;
     text-align: center;
     padding: 2em;
     letter-spacing: 5px;
@@ -377,6 +447,23 @@ html, body {
     width: 10px;
 }
 
+@media (max-width: 1200px) {
+    .project-info {
+        padding: 50px;
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-photo {
+        visibility: hidden;
+    }
+}
+@media (max-width: 600px) {
+
+}
+
 /* QUOTE START */
 #quote {
     color:rgba(13, 13, 13, 0.75);
@@ -403,6 +490,19 @@ html, body {
     bottom: 120%;
     text-transform: lowercase;
     letter-spacing: 10px;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    #quote {
+        visibility: hidden;
+    }
+}
+@media (max-width: 600px) {
+
 }
 
 
@@ -521,6 +621,17 @@ html, body {
 .project-description p {
     color: red;
 }
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+
+}
+
 /* FOOTER START */
 footer {
     display: grid;
@@ -557,5 +668,17 @@ footer a {
 
 footer a:hover {
     color: rgba(13, 13, 13, 0.25);
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+    .logo {
+        visibility: hidden;
+    }
 }
 /* FOOTER END */
