@@ -89,12 +89,13 @@ html, body {
     font-weight: lighter;
     text-align: center;
     font-size: 8vw;
-    color: #786454;
+    color: #122932;
 }
 
 .hero h5 {
     font-weight: lighter;
     font-size: 3vw;
+    color: #122932;
 }
 
 @keyframes typewriter {
@@ -161,7 +162,7 @@ html, body {
     height: 200vh;
 } 
 .style-text {
-    font-size: 12px;
+    font-size: 1vw;
     text-align: center;
     padding: 150px 200px 0px 200px;
     line-height: 20px;
@@ -184,7 +185,6 @@ html, body {
         border-left: none;
     }
     .style-text {
-        font-size: 20px;
         padding: 20px;
         margin: 50px;
         line-height: 30px;
@@ -218,7 +218,7 @@ html, body {
 
 #about-heading h1 {
     color:rgba(13, 13, 13, 0.75);
-    font-size: 5em;
+    font-size: 7vw;
     font-weight: lighter;
     padding-top: 50px;
 }
@@ -237,7 +237,8 @@ html, body {
 
 .about-section1 , .about-section2 {
     color: whitesmoke;
-    font-size: 14px;
+    font-size: 1vw;
+    letter-spacing: 0.5px;
     padding: 0px 50px 0px 50px;
     margin-left: 150px;
 }
@@ -279,7 +280,7 @@ html, body {
 .skills-heading {
     text-transform: uppercase;
     text-align: left;
-    font-size: 25px;
+    font-size: 2vw;
     letter-spacing: 2px;
     padding-left: 5em;
     padding-top: 1em;
@@ -312,7 +313,7 @@ html, body {
 }
 
 .skill p {
-    font-size: 12px;
+    font-size: 1vw;
 }
 
 @media (max-width: 1200px) {
@@ -343,7 +344,7 @@ html, body {
 #process-heading {
     grid-area: heading;
     color: white;
-    font-size: 60px;
+    font-size: 4vw;
     letter-spacing: 30px;
     text-align: left;
     text-transform: uppercase;
@@ -352,7 +353,7 @@ html, body {
 
 .number {
     color: white;
-    font-size: 100px;
+    font-size: 6vw;
     text-align: left;
     padding-left: 50px;
 }
@@ -368,7 +369,7 @@ html, body {
 
 .process-step {
     color: white;
-    font-size: 12px;
+    font-size: 1vw;
     padding: 0px 50px;
 }
 .step1 {
@@ -404,7 +405,7 @@ html, body {
 }
 
 .featured-heading h2 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: lighter;
     text-align: center;
     padding: 2em;
@@ -417,14 +418,14 @@ html, body {
 }
 
 .project-info h6 {
-    font-size: 12px;
+    font-size: 1vw;
     letter-spacing: 1px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
 .project-info p{
-    font-size: 12px;
+    font-size: 1vw;
 }
 
 .read-more {
@@ -473,7 +474,7 @@ html, body {
     padding-top: 50px;
 }
 #quote h4 {
-    font-size: 2rem;
+    font-size: 3vw;
     border: 1px solid rgba(13, 13, 13, 0.25);
     height: 230px;
     width: 700px;
@@ -484,10 +485,10 @@ html, body {
     
 }
 #quote h6 {
-    font-size: 1rem;
+    font-size: 1.5vw;
     font-weight:500;
     position: relative;
-    bottom: 120%;
+    bottom: 220px;
     text-transform: lowercase;
     letter-spacing: 10px;
 }
@@ -537,7 +538,7 @@ html, body {
 
 #contact-form label {
     display: block;
-    font-size: .8em;
+    font-size: 1vw;
     color:rgba(13, 13, 13, 0.75);
     padding-left: 5px;
 }
@@ -562,7 +563,7 @@ html, body {
     background: transparent;
     color:rgba(13, 13, 13, 0.75);
     font-family: 'Playfair Display', serif;
-    font-size: 12px;
+    font-size: 1vw;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -597,7 +598,7 @@ html, body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2em;
-    font-size: 40px;
+    font-size: 2vw;
 }
 
 .project-video {
@@ -649,7 +650,7 @@ footer {
 }
 
 .footer-heading {
-    font-size: 15px;
+    font-size: 1.5vw;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
