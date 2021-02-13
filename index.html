@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
@@ -21,7 +23,7 @@
 <!-- NAV START -->  
   <nav>
       <ul id="navbar">
-          <li> <a href="">Home</a> </li>
+          <li> <a href="index.html">Home</a> </li>
           <li> <a href="#about-me">About</a> </li>
           <li> <a href="#contact-me">Contact</a> </li>
       </ul>
@@ -31,7 +33,7 @@
 <section id="home">
   <div class="hero">
     <div class="main">
-      <h1>Samantha Cabrera</h1>
+      <h1 class="wow animate__animated animate__fadeIn animate__slow">Samantha Cabrera</h1>
       <h5 class="line anim-typewriter">Front End Web Developer</h5>
     </div>
   </div>
@@ -45,40 +47,38 @@
 <div class="whitespace"></div>
 
 <!-- STYLE START -->
-<section id="style" class="flex-direction">
+<section id="style" class="flex-container">
 
   <div class="style-text">
     <p class="wow animate__animated animate__fadeInDown animate__slow">minimal style<br>
-      I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
-      sustainable unicorn. Fixie seitan VHS yr, lumbersexual palo santo kale chips occupy vice put a bird on it unicorn
-      kickstarter</p>
+      I believe that less is more when it comes to website design. Keeping the website uncluttered and simple allows 
+    the user to easily interact with the content -- ensuring a pleasant experience.</p>
   </div>
 
-  <div class="line-left">
-    <img alt="" src="https://images.unsplash.com/photo-1593637802665-457d5159a437?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80">
+  <div class="style-photo line-left">
+    <img alt="photo of palm fronds" src="https://images.unsplash.com/photo-1593637802665-457d5159a437?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80">
   </div>
 
-  <div>
-    <img alt="" src="https://images.unsplash.com/photo-1583314238585-21664bba94ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80">
+  <div class="style-photo">
+    <img alt="photo of palm fronds"  src="https://images.unsplash.com/photo-1583314238585-21664bba94ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80">
   </div>
 
   <div class="style-text line-left">
       <p class="wow animate__animated animate__fadeInDown animate__slow">purposeful design<br>
-      I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
-      sustainable
-      unicorn. Fixie seitan VHS yr, lumbersexual palo santo kale chips occupy vice put a bird on it unicorn
-      kickstarter</p>
+      Each element of a webpage should be delibrate and serve a purpose. This helps to avoid clutter, and allows
+      the developer to focus solely on beneficial features.
+      </p>
   </div>
 
   <div class="style-text">
-      <p class="wow animate__animated animate__fadeInDown animate__slow">minimal style<br>
-        I'm baby messenger bag vexillologist seitan jean shorts art party normcore taxidermy street art blue bottle
-        sustainable unicorn. Fixie seitan VHS yr, lumbersexual palo santo kale chips occupy vice put a bird on it unicorn
-        kickstarter</p>
+      <p class="wow animate__animated animate__fadeInDown animate__slow">artistic compostion<br>
+        An outdated or unpleasing webpage reflects poorly on the webpage owner or company. By keeping a website
+        modern, you show the user that you value their time and dedicated to remaining at the top.
+      </p>
   </div>
 
-  <div class="line-left">
-    <img alt="" src="https://images.unsplash.com/photo-1596747618111-0482c4283160?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+  <div class="style-photo line-left">
+    <img alt="photo of palm fronds" src="https://images.unsplash.com/photo-1596747618111-0482c4283160?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
   </div>
 
 </section>
@@ -88,25 +88,24 @@
 
 <!-- ABOUT START -->
 <section id="about">
+    
       <div id="about-heading" class="wow animate__animated animate__fadeIn animate__slow">
       <a id="about-me">
         <h1>About me</h1>
       </a>
       </div>
 
-      <div id="about-circle" class="wow animate__animated animate__fadeIn animate__slow"></div>
-
+      <div class="flex-container">
+      
       <h6 class="about-section1 wow animate__animated animate__fadeInLeft animate__slow">
       I am a Southern California native with a love for creating. I love the challenge of developing a website that is not
       only functional, but beautiful. I was drawn to web development because because of the complete freedom it gives to
       visualize and create. I also love that the field is constantly evolving, which gives me the opportunity to continue to
       learn in order to keep up with evolving technologies and aesthetics.</h6>
 
-      <h6 class="about-section2 wow animate__animated animate__fadeInRight animate__slow">In my first professional project, I created a website for a landscaping company using Bootstrap. I solo developed this
-      project from the idea stage all the way to deployment. I loved the experience of being able to implement the company's
-      vision, as well as suggest and recommend modern components. This grew my confidence that I have the knowledge and
-      resources to succeed as a web developer</h6>
-      
+      <h6 class="about-section2 wow animate__animated animate__fadeInRight animate__slow"></h6>
+      </div>
+
 </section>
 
 <div class="whitespace"></div>
@@ -124,53 +123,58 @@
   </div>
 
   <div class="skills-list">
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-0">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-0 animate__faster">
     <p>html</p>
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette
-      ssenger bag mumblecore twee man bun crucifix leggings williamsburg
+    <p>
+      My foundational web language is HTML. This provides me with a solid base which has prepared me for other 
+      languages and libraries. 
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-0">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-0 animate__faster">
     <p>mongo</p>
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
-      ssenger bag mumblecore twee man bun crucifix leggings williamsburgssenger bag mumblecore twleggings williamsburg
+    <p>
+      Mongo is how I've done most of my database work. It is a reliable database language and is among
+      the most popular and desired in the industry. 
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-1s animate__fast">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-1s animate__faster">
     <hr>
     <p>css</p>
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette
-      Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclet
+    <p>
+      In many of my projects, including this website, I use the CSS grid to create a quick and responsive layout. 
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-1s animate__fast">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-1s animate__faster">
     <hr>
-    <p>mongoose</p>
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
-      Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclet
+    <p>bootstrap</p>
+    <p>
+      Bootstrap components are a fun and fast way to develop websites. I have used in in several projects, including
+      my published website for Ramon Franco Landscaping.
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-2s animate__fast">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-2s animate__faster">
     <hr>
     <p>javascript</p> 
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
-      Venmo messenger bag mumblecore twee man bun crucifixamsburg edison bulb fingerstache raclet
+    <p>
+      I use javascript as my scripting language. It is a simple, powerful software language, and it allows me to 
+      use many powerful libraries.
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-2s animate__fast">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-2s animate__faster">
     <hr>
-    <p>express</p>
-    <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
-      enmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache racl...
+    <p>wordpress</p>
+    <p>
+      I enjoy creating websites with word press. This has enabled me to develop an eye for web design while
+      also developing a new skill that is often used in the industry.
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-3s animate__fast">
+  <!--<div class="skill wow animate__animated animate__fadeIn animate__delay-3s animate__faster">
     <hr>
     <p>bootstrap</p>
     <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
@@ -178,13 +182,13 @@
     </p>
   </div>
 
-  <div class="skill wow animate__animated animate__fadeIn animate__delay-3s animate__fast">
+  <div class="skill wow animate__animated animate__fadeIn animate__delay-3s animate__faster">
     <hr>
     <p>wordpress</p>
     <p>Venmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache raclette.
       enmo messenger bag mumblecore twee man bun crucifix leggings williamsburg edison bulb fingerstache racl. Sam.
     </p>
-  </div>
+  </div>-->
   </div>
 </section>
 
@@ -192,8 +196,7 @@
 <div class="whitespace"></div>
 
 <!-- PROCESS START -->
-<section id="process">
-
+<section id="process" >
 
     <h1 id="process-heading" class="wow animate__animated animate__fadeIn">My Process</h1>
 
@@ -204,29 +207,37 @@
     <h2 class="number number3 wow animate__animated animate__fadeIn animate__delay-2s">3</h2>
 
     <div class="process-step step1 wow animate__animated animate__fadeIn animate__delay-0.5s">
-      <p>| research |</p>
-      <p>On the other hand, we denounce they cannot foresee the pain and trouble that are bound to
-        ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying
-        through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
+      <p>| inspiration |</p>
+      <p>
+        To stay relevant in an ever-evolving industry, I keep up to date on modern website design. I do this by
+        following pages that highlight web design techniques and ideas on pinterest and instagram. This highlights
+        aestetics, technologies, and methodologies that I can learn and practice.
+      </p>
     </div>
 
     <div class="process-step step2 wow animate__animated animate__fadeIn animate__delay-1s">
-      <p>| inspiration |</p>
-      <p>On the other hand, we denounce they cannot foresee the pain and trouble that are bound to
-        ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying
-        through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
+      <p>| research |</p>
+      <p>
+        When I begin a new project, I first gather all available information regarding the project. For example,
+        I get an idea of what the clients wants, gather any pictures or data to be display, and then I start making
+        design decisions.
+      </p>
     </div>
 
     <div class="process-step step3 wow animate__animated animate__fadeIn animate__delay-2s">
-      <p>| research |</p>
-      <p>On the other hand, we denounce they cannot foresee the pain and trouble that are bound to
-        ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying
-        through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.</p>
+      <p>| execution |</p>
+      <p>
+        When working on a project, I have learned to apply proper design principles throughout the project, and
+        not just at the end. I complete the functionality of each component before moving on. I have learned 
+        that this saves time as it avoids bugs later on.
+      </p>
     </div>
-
+ 
 </section>
 
-<div class="whitespace"></div>
+<section id="divider">
+  <img alt="photo of palm fronds in the sun" src="https://images.unsplash.com/photo-1536009190979-329b94ad4d57?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80">
+</section>
 
 <!-- FEATURED START -->
 <section id="featured">
@@ -236,37 +247,41 @@
   </div>
 
   <div id="featured-grid">
-  <div class="project-info wow animate__animated animate__fadeInLeft">
+  <div class="project-description wow animate__animated animate__fadeInLeft">
       <h6>custom landscaping website</h6>
-      <p>r hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the
-      charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to
-      ensue; and equal blame belongs to those who fail in their duty.</p>
-      <p>go to website</p>
-      <img class="read-more" src="./icons/001-right-arrow.svg" onclick="location.href='landscaping.html'">
+      <p>In my first professional project, I created a website for a landscaping company using Bootstrap. I solo developed this
+      project from the idea stage all the way to deployment. I loved the experience of being able to implement the company's
+      vision, as well as suggest and recommend modern components. This grew my confidence that I have the knowledge and
+      resources to succeed as a web developer.</p>
+      <img class="see-more" src="./icons/001-right-arrow.svg" onclick="location.href='landscaping.html'">
   </div>
+
   <div><img class="project-photo" src="https://images.unsplash.com/photo-1527837730880-e99d8cfe46a8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"></div>
 
-  <div class="project-info wow animate__animated animate__fadeInLeft">
+  <div class="project-description wow animate__animated animate__fadeInLeft">
     <h6>bohemian website template</h6>
-    <p>r hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the
-      charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound
-      to hand, we denounce wi d, we denounce with rightty.</p>
-    <p>read more</p>
-    <img class="read-more" src="./icons/001-right-arrow.svg" onclick="location.href='FERN.html'">
+    <p>
+      This website template displays my ability to design in a modern, bohemian style which is a popular choice
+      for websites that target a young audience. 
+    </p>
+    <p>go to template</p>
+    <img class="see-more" src="./icons/001-right-arrow.svg" onclick="location.href='FERN.html'">
   </div>
+
   <div><img class="project-photo"
       src="https://images.unsplash.com/photo-1605101417781-b069480f938a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80">
   </div>
 
-    <div class="project-info wow animate__animated animate__fadeInLeft">
+    <div class="project-description wow animate__animated animate__fadeInLeft">
       <h6>modern website template</h6>
-      <p>we are hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the
-        charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound
-        to hand, we denounce wi d, we denounce with righteous indignation and dislike men who are so beguiled and
-        demoralized by the charms of pleasure of the moment, eir duty.</p>
-      <p>read more</p>
-      <img class="read-more" src="./icons/001-right-arrow.svg" onclick="location.href='monochrome.html'">
+      <p>
+        This website template shows a black and white contemporary design. This provides an elevated and luxurious
+        look. 
+      </p>
+      <p>go to template</p>
+      <img class="see-more" src="./icons/001-right-arrow.svg" onclick="location.href='monochrome.html'">
     </div>
+
     <div><img class="project-photo"
         src="https://images.unsplash.com/photo-1576854305946-f67baef382af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80">
     </div>
@@ -276,8 +291,8 @@
 <div class="whitespace"></div>
 
 <section id="quote">
-    <h4>Vape live-edge health goth iPhone,<br> kombucha woke master cleanse knausgaard tumeric palo</h4>
-    <h6>-Abraham Lincoln</h6>
+    <h4>Creativity is allowing yourself to make mistakes.<br> Art is knowning which ones to keep.</h4>
+    <h6>-Scott Adams</h6>
 </section>
 
 <div class="whitespace"></div>
@@ -285,37 +300,39 @@
 
 <!-- CONTACT START -->
 <section id="contact">
-  <div class="collab wow animate__animated animate__fadeIn">
+  <div class="collab wow animate__animated animate__fadeInRightBig animate__slow">
     <a id="contact-me">
       <p class="">Got an interesting project? I can help.</p>
     </a>
   </div>
 
-  <form name="contact-form" id="contact-form" method="POST" action="">
+  <form name="contactForm" id="contactForm" method="POST" action="contact.php" role="form">
+
+    <div class="messages"></div>
     <ul>
       <li>
-        <label for="contact-name">Name: </label>
+        <label for="name">Name: </label>
           <div class="textarea">
-            <input type="text" name="contact-name" id="contact-name" value="" required>
+            <input type="text" name="name" id="name" value="" required>
           </div>
       </li>
   
       <li>
-        <label for="contact-email">Email: </label>
+        <label for="email">Email: </label>
           <div class="textarea">
-            <input type="email" name="contact-email" id="contact-email" value="" required>
+            <input type="email" name="email" id="email" value="" required>
           </div>
       </li>
   
       <li>
-        <label for="contact-message">Message: </label>
+        <label for="message">Message: </label>
           <div class="textarea">
-            <textarea type="text" name="contact-message" id="contact-message" value="" rows="6" required></textarea>
+            <textarea type="text" name="message" id="message" value="" rows="6" required></textarea>
           </div>
       </li>
     </ul>
   
-    <button type="submit" name="contact-submit" id="contact-submit" class="send">Send Message</button>
+    <button type="submit" name="form-submit" id="form-submit" class="send">Send Message</button>
   </form>
 </section>
 
@@ -341,7 +358,9 @@
       title="Flaticon" target=__blank>www.flaticon.com</a> </p>
 
 </footer>
-
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/validator.min.js"></script>
+  <script type="text/javascript" src="js/form-scripts.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
     integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"

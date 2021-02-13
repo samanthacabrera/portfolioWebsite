@@ -20,15 +20,8 @@ html, body {
     }
 }
 
-.flex-direction {
+.flex-container {
     display: flex;
-}
-
-@media (max-width: 1200px) {
-    .flex-direction {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
 
 /* NAVBAR START */
@@ -88,14 +81,14 @@ html, body {
 .hero h1 {
     font-weight: lighter;
     text-align: center;
-    font-size: 8vw;
-    color: #122932;
+    font-size: 7vw;
+    color: darkolivegreen
 }
 
 .hero h5 {
     font-weight: lighter;
     font-size: 3vw;
-    color: #122932;
+    color: darkolivegreen;
 }
 
 @keyframes typewriter {
@@ -103,21 +96,7 @@ html, body {
         width: 0;
     }
     to {
-        width: 52%;
-    }
-}
-
-@media(max-width:1000px) {
-    @keyframes typewriter {
-        from {
-            width: 0;
-        }
-        to {
-            width: 52%;
-        }
-    }
-    .hero h1 {
-        color: red;
+        width: 59%;
     }
 }
 
@@ -158,14 +137,15 @@ html, body {
 #style {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-auto-rows: 2fr 2fr 2fr;
     height: 200vh;
 } 
+
 .style-text {
-    font-size: 1vw;
+    font-size: 0.85vw;
     text-align: center;
-    padding: 150px 200px 0px 200px;
-    line-height: 20px;
+    padding: 100px;
+    line-height: 40px;
 }
 
 .line-left {
@@ -184,35 +164,38 @@ html, body {
     .line-left {
         border-left: none;
     }
-    .style-text {
-        padding: 20px;
-        margin: 50px;
-        line-height: 30px;
-    }
-    .flex-direction {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 900px) {
-
+    #style {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .style-text {
+        font-size: 1.5vw;
+        padding: 75px;
+    }
+    .style-photo {
+        display: none;
+    }
 }
 @media (max-width: 600px) {
-
+    .style-text {
+        font-size: 2vw;
+    }
 }
 
 /* ABOUT START */
 #about {
     background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
     height: 140vh;
-    width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #about-heading {
-    grid-column: 3/4;
+    grid-column: 1/4;
     grid-row: 1;
 }
 
@@ -220,19 +203,7 @@ html, body {
     color:rgba(13, 13, 13, 0.75);
     font-size: 7vw;
     font-weight: lighter;
-    padding-top: 50px;
-}
-
-#about-circle {
-    grid-column: 3/4;
-    grid-row: 1;
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
-    border: 1px solid whitesmoke;
-    position: relative;
-    left: 50%;
-    top: 100px;
+    padding-left: 150px;
 }
 
 .about-section1 , .about-section2 {
@@ -254,16 +225,26 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-    #about-circle {
-        visibility: hidden;
+    .about-section1 , .about-section2 {
+        font-size: 1.5vw;
     }
 }
 
 @media (max-width: 900px) {
-
+    #about-heading h1 {
+        font-size: 10vw;
+    }
+    .about-section1 , .about-section2 {
+        font-size: 1.8vw;
+    }
 }
 @media (max-width: 600px) {
-
+    #about-heading h1 {
+        font-size: 15vw;
+    }
+    .about-section1 , .about-section2 {
+        font-size: 2.3vw;
+    }
 }
 
 /* SKILLS START */
@@ -273,6 +254,7 @@ html, body {
     grid-auto-rows: 5vh;
     grid-gap: 0px;
     height: 100vh;
+    max-height: fit-content;
     color:rgba(13, 13, 13, 0.75);
     padding-left: 100px;
 }
@@ -321,10 +303,23 @@ html, body {
 }
 
 @media (max-width: 900px) {
-
+    #skills {
+        grid-template-columns: 1fr;
+    }
+    .skills-heading {
+        display: none;
+    }
+    .skills-photo {
+        display: none;
+    }
+    .skill p {
+        font-size: 1.5vw;
+    }
 }
 @media (max-width: 600px) {
-
+    .skill p {
+        font-size: 2vw;
+    }
 }
 
 
@@ -387,14 +382,34 @@ html, body {
 }
 
 @media (max-width: 900px) {
-    .number {
-        visibility: hidden;
+    #process {
+        display: none;
     }
 }
 @media (max-width: 600px) {
 
 }
 
+/* DIVIDER START */
+#divider img {
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+    visibility: collapse;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    #divider img {
+        visibility: visible;
+    }
+}
+@media (max-width: 600px) {
+
+}
 /* FEATURED START */
 #featured-grid {
     display: grid;
@@ -412,23 +427,28 @@ html, body {
     letter-spacing: 5px;
 }
 
-.project-info {
+.project-description {
     text-align: center;
     padding: 100px 200px;
 }
 
-.project-info h6 {
+.project-description h6 {
     font-size: 1vw;
     letter-spacing: 1px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
-.project-info p{
+.project-description p{
     font-size: 1vw;
 }
 
-.read-more {
+.see-more {
+    height: 10px;
+    width: 10px;
+}
+
+.see-more img {
     height: 10px;
     width: 10px;
 }
@@ -443,26 +463,32 @@ html, body {
     padding-bottom: 30px;
 }
 
-.read-more img {
-    height: 10px;
-    width: 10px;
-}
-
 @media (max-width: 1200px) {
-    .project-info {
+    .project-description {
         padding: 50px;
         position: relative;
-        left: 50%;
+        left: 60%;
     }
-}
-
-@media (max-width: 900px) {
+    .project-description h6 , .project-description p {
+        font-size: 1.5vw;
+    }
     .project-photo {
         visibility: hidden;
     }
 }
-@media (max-width: 600px) {
 
+@media (max-width: 900px) {
+    .project-description {
+        padding: 25px;
+    }
+    .project-description h6, .project-description p {
+        font-size: 1.75vw;
+    }
+}
+@media (max-width: 600px) {
+    .project-description h6 , .project-description p {
+        font-size: 2vw;
+    }
 }
 
 /* QUOTE START */
@@ -488,7 +514,7 @@ html, body {
     font-size: 1.5vw;
     font-weight:500;
     position: relative;
-    bottom: 220px;
+    bottom: 200px;
     text-transform: lowercase;
     letter-spacing: 10px;
 }
@@ -525,25 +551,25 @@ html, body {
 }
 
 
-#contact-form ul {
+#contactForm ul {
     list-style: none;
     border-radius: 5px;
     margin-bottom: 40px;
 }
 
-#contact-form li {
+#contactForm li {
     padding: 10px;
     letter-spacing: 2px;
 }
 
-#contact-form label {
+#contactForm label {
     display: block;
     font-size: 1vw;
     color:rgba(13, 13, 13, 0.75);
     padding-left: 5px;
 }
 
-#contact-form input, #contact-form textarea {
+#contactForm input, #contactForm textarea {
     width: 100%;
     padding: 5px;
     border: none;
@@ -573,64 +599,74 @@ html, body {
     background-color:rgba(13, 13, 13, 0.75);
 }
 
-@media(max-width: 768px) {
-    #contact-form {
+@media (max-width: 1200px) {
+    #contactForm label {
+        font-size: 1.2vw;
+    }
+}
+@media (max-width: 900px) {
+    #contactForm {
         margin: 5% -8%;
         width: 98%;
     }
+    #contactForm label {
+        font-size: 1.4vw;
+    }
 }
-
-
+@media (max-width: 600px) {
+    #contactForm label {
+        font-size: 2vw;
+    }
+}
 /* PROJECT PAGE START */
 
-.project {
+.project-page {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
-    grid-gap: 50px;
+    grid-template-columns: 1fr;
     height: 150vh;
-    margin: 100px 150px 100px 200px;
+    text-align: center;
 }
 
 .project-heading {
-    grid-column: 1/3;
-    grid-row: 1;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2em;
     font-size: 2vw;
+    padding: 100px 0px 0px 50px;
 }
 
-.project-video {
-    grid-column: 1/4;
-    grid-row: 2/4;
-    margin-left: 50px;
+.project-info {
+    font-size: 1vw;
 }
 
 .project-video video {
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 65vw;
     border: 1px solid #efdcca;
 }
 
-.project-description {
-    grid-row: 4;
-    padding: 0px 100px;
-    text-align: center;
-}
-
-.project-description p {
-    color: red;
-}
-
 @media (max-width: 1200px) {
-
+    .project-heading {
+        font-size: 3vw;
+    }
+    .project-info {
+        font-size: 1.5vw;
+    }
 }
 @media (max-width: 900px) {
-
+    .project-heading {
+        font-size: 3.5vw;
+    }
+    .project-info {
+        font-size: 2vw;
+    }
 }
 @media (max-width: 600px) {
-
+    .project-heading {
+        font-size: 4vw;
+    }
+    .project-info {
+        font-size: 3vw;
+    }
 }
 
 /* FOOTER START */
