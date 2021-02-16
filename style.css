@@ -31,7 +31,7 @@ html, body {
   position: fixed;  
   top: 175px; 
   left: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: transparent; 
 }
 
@@ -82,13 +82,13 @@ html, body {
     font-weight: lighter;
     text-align: center;
     font-size: 7vw;
-    color: darkolivegreen
+    color: #717557
 }
 
 .hero h5 {
     font-weight: lighter;
     font-size: 3vw;
-    color: darkolivegreen;
+    color: #717557;
 }
 
 @keyframes typewriter {
@@ -188,10 +188,12 @@ html, body {
 /* ABOUT START */
 #about {
     background-image: url(https://images.unsplash.com/photo-1488197047962-b48492212cda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80);
-    height: 140vh;
+    background-size: cover;
+    height: fit-content;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 100px;
 }
 
 #about-heading {
@@ -210,18 +212,20 @@ html, body {
 .about-section {
     color: whitesmoke;
     font-size: 1vw;
+    line-height: 30px;
     letter-spacing: 0.5px;
-    padding: 0px 50px;
-    margin: 0px 150px;
+    margin: 150px
 }
 
 @media (max-width: 1200px) {
     .about-section {
         font-size: 1.5vw;
+        margin: 0px 150px;
     }
 }
 @media (max-width: 900px) {
     #about-heading h1 {
+        text-align: center;
         font-size: 10vw;
     }
     .about-section {
@@ -234,8 +238,8 @@ html, body {
     }
     .about-section {
         font-size: 2.3vw;
-        padding: none;
-        margin: 0px 100px;
+        text-align: center;
+        margin: 0px 75px;
     }
 }
 
@@ -304,23 +308,26 @@ html, body {
     .skills-photo {
         display: none;
     }
+    .skills-list {
+        padding-top: 20%;;
+    }
     .skill p {
         font-size: 1.5vw;
     }
 }
 @media (max-width: 600px) {
     #skills {
-        height: 115vh;
+        min-height: 90vh;
     }
     .skills-list {
         grid-template-columns: 1fr;
-        
-    }
-    .skills-list hr {
-        display: none;
+        padding: 20% 5% 20% 5%;
     }
     .skill p {
         font-size: 2vw;
+    }
+    .skills-list hr {
+        display: none;
     }
 }
 
@@ -550,7 +557,6 @@ html, body {
     grid-template-areas:
     "header"
     "info";
-    margin: 0px 150px;
 }
 
 #contact h1 {
@@ -561,11 +567,7 @@ html, body {
     line-height: 150px;
     text-align: center;
     text-transform: uppercase;
-    color: darkolivegreen;
-}
-
-#contact h1 span {
-    letter-spacing: 30px;
+    color: #717557;
 }
 
 #contact h6 {
@@ -573,13 +575,15 @@ html, body {
     font-size: 1.75vw;
     font-weight: lighter;
     text-align: center;
-    line-height: 60px;
+    line-height: 100px;
 }
 
 #contact h6 a {
-    color: darkolivegreen;
+    color: #717557;
     text-decoration: none;
+    letter-spacing: 5px;
 }
+
 
 @media (max-width: 1200px) {
 
@@ -596,10 +600,13 @@ html, body {
 }
 @media (max-width: 600px) {
     #contact h1 {
+        font-size: 5vw;
         line-height: 50px;
+        padding-left: 5%;
     }
     #contact h6 { 
         font-size: 3vw;
+        padding-left: 5%;
     }
 }
 /* PROJECT PAGE START */
@@ -659,6 +666,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
     background-color: #efdcca; 
+    position: relative;    
+    z-index: 2;
 }
 
 .logo {
