@@ -207,10 +207,6 @@ html, body {
     letter-spacing: 10px;
 }
 
-#about-heading h1 span{
-    color: whitesmoke;
-}
-
 .about-section {
     color: whitesmoke;
     font-size: 1vw;
@@ -313,6 +309,9 @@ html, body {
     }
 }
 @media (max-width: 600px) {
+    #skills {
+        height: 115vh;
+    }
     .skills-list {
         grid-template-columns: 1fr;
         
@@ -551,7 +550,7 @@ html, body {
     grid-template-areas:
     "header"
     "info";
-    margin: 150px;
+    margin: 0px 150px;
 }
 
 #contact h1 {
