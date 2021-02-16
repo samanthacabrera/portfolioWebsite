@@ -203,38 +203,32 @@ html, body {
     color:rgba(13, 13, 13, 0.75);
     font-size: 7vw;
     font-weight: lighter;
-    padding-left: 150px;
+    padding: 0px 150px;
+    letter-spacing: 10px;
 }
 
-.about-section1 , .about-section2 {
+#about-heading h1 span{
+    color: whitesmoke;
+}
+
+.about-section {
     color: whitesmoke;
     font-size: 1vw;
     letter-spacing: 0.5px;
-    padding: 0px 50px 0px 50px;
-    margin-left: 150px;
-}
-
-.about-section1 {
-    grid-column: 1/2;
-    grid-row: 2;
-}
-
-.about-section2 {
-    grid-column: 2/3;
-    grid-row: 2;
+    padding: 0px 50px;
+    margin: 0px 150px;
 }
 
 @media (max-width: 1200px) {
-    .about-section1 , .about-section2 {
+    .about-section {
         font-size: 1.5vw;
     }
 }
-
 @media (max-width: 900px) {
     #about-heading h1 {
         font-size: 10vw;
     }
-    .about-section1 , .about-section2 {
+    .about-section {
         font-size: 1.8vw;
     }
 }
@@ -242,8 +236,10 @@ html, body {
     #about-heading h1 {
         font-size: 15vw;
     }
-    .about-section1 , .about-section2 {
+    .about-section {
         font-size: 2.3vw;
+        padding: none;
+        margin: 0px 100px;
     }
 }
 
@@ -317,6 +313,13 @@ html, body {
     }
 }
 @media (max-width: 600px) {
+    .skills-list {
+        grid-template-columns: 1fr;
+        
+    }
+    .skills-list hr {
+        display: none;
+    }
     .skill p {
         font-size: 2vw;
     }
@@ -460,7 +463,11 @@ html, body {
     position: relative;
     left: 15%;
     border-radius: 50%;
-    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+.padding-top-175 {
+    padding-top: 175px;
 }
 
 @media (max-width: 1200px) {
@@ -474,6 +481,9 @@ html, body {
     }
     .project-photo {
         visibility: hidden;
+    }
+    .padding-top-175 {
+        padding-top: none;
     }
 }
 
@@ -502,11 +512,11 @@ html, body {
 #quote h4 {
     font-size: 3vw;
     border: 1px solid rgba(13, 13, 13, 0.25);
-    height: 230px;
+    height: 250px;
     width: 700px;
     position: relative;
     left: 25%;
-    bottom: 75%;
+    bottom: 100%;
     padding-top: 35px;
     
 }
@@ -514,19 +524,19 @@ html, body {
     font-size: 1.5vw;
     font-weight:500;
     position: relative;
-    bottom: 200px;
+    bottom: 250px;
     text-transform: lowercase;
     letter-spacing: 10px;
 }
 
 @media (max-width: 1200px) {
-
+    #quote {
+        display: none;
+    }
 }
 
 @media (max-width: 900px) {
-    #quote {
-        visibility: hidden;
-    }
+
 }
 @media (max-width: 600px) {
 
@@ -537,85 +547,60 @@ html, body {
 #contact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-    margin: 0px 150px 0px 150px;
-    height: 100vh;
-}
-.collab {
-    text-align: right;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "header"
+    "info";
+    margin: 150px;
 }
 
-.collab p {
+#contact h1 {
+    grid-area: header;
+    font-size: 6vw;
     font-weight: lighter;
-    margin-bottom: 20px;
-}
-
-
-#contactForm ul {
-    list-style: none;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-
-#contactForm li {
-    padding: 10px;
-    letter-spacing: 2px;
-}
-
-#contactForm label {
-    display: block;
-    font-size: 1vw;
-    color:rgba(13, 13, 13, 0.75);
-    padding-left: 5px;
-}
-
-#contactForm input, #contactForm textarea {
-    width: 100%;
-    padding: 5px;
-    border: none;
-    resize: vertical;
-    background: transparent;
-    color: rgba(13, 13, 13, 0.75);
-    font-weight: lighter;
-}
-
-.textarea {
-    border-bottom: 1px solid rgba(13, 13, 13, 0.75);
-}
-
-.send {
-    margin-left: 50px;
-    padding: 20px 20px;
-    background: transparent;
-    color:rgba(13, 13, 13, 0.75);
-    font-family: 'Playfair Display', serif;
-    font-size: 1vw;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
+    line-height: 150px;
+    text-align: center;
     text-transform: uppercase;
+    color: darkolivegreen;
 }
 
-.send:hover {
-    color: white;
-    background-color:rgba(13, 13, 13, 0.75);
+#contact h1 span {
+    letter-spacing: 30px;
+}
+
+#contact h6 {
+    grid-area: info;
+    font-size: 1.75vw;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contact h6 a {
+    color: darkolivegreen;
+    text-decoration: none;
 }
 
 @media (max-width: 1200px) {
-    #contactForm label {
-        font-size: 1.2vw;
-    }
+
 }
 @media (max-width: 900px) {
-    #contactForm {
-        margin: 5% -8%;
-        width: 98%;
+    #contact h1 {
+        line-height: 130px;
+        letter-spacing: 20px;
     }
-    #contactForm label {
-        font-size: 1.4vw;
+    #contact h6 {
+        font-size: 2vw;
+        line-height: 55px;
     }
 }
 @media (max-width: 600px) {
-    #contactForm label {
-        font-size: 2vw;
+    #contact h1 {
+        line-height: 50px;
+    }
+    #contact h6 { 
+        font-size: 3vw;
     }
 }
 /* PROJECT PAGE START */
@@ -685,17 +670,9 @@ footer {
     justify-self: center;
 }
 
-.footer-heading {
-    font-size: 1.5vw;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    top: 30px;
-}
-
 footer p {
     text-align: center;
+    padding: 100px 75px;
 }
 
 footer a {
@@ -711,11 +688,10 @@ footer a:hover {
 
 }
 @media (max-width: 900px) {
-
+    .attributions {
+        display: none;
 }
 @media (max-width: 600px) {
-    .logo {
-        visibility: hidden;
-    }
+
 }
 /* FOOTER END */
